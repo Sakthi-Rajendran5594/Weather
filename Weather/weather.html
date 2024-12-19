@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row navbar">
+            <div class="col-5">
+                <p class="logo"><img src="logo.png"/><a id="home">AccuWeather</a></p>
+            </div>
+            <div class="col-7 navbar-content">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#camers">Live Camears</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="../Weather/Survey_Fourm/survey.html">Survey Form</a></li>
+                <li><a href="../Weather/Patient_Fourm/patient.html">Patient Form</a></li>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 background">
+                <input type="text" class="box2" id="city" placeholder="Find your location">
+                <button onclick="getWeather()" class="bt1" type="submit">Find</button>
+
+            </div>
+        </div>
+        </div>
+        <div class="background2">
+        <div class="container-fluid">
+        <div class="row upper">
+            <div class="col-1">
+            </div>
+            <div class="col-3 monday">
+                <div class="text1" id="monday-day"></div>
+                <div id="city-name" class="text3"></div>
+                <div><img src="../Weather/icon-1.svg" class="inline"/></div>
+                <div class="text4" id="monday-temp"></div>
+                <div class="text5" id="monday-fahrenheit"></div>
+            </div>
+            <div class="col-1 tuesday">
+                <div class="text1" id="tuesday-day"></div>
+                <div><img src="../Weather/icon-3.svg" class="inline2"/></div>
+                <p class="text6" id="tuesday-temp"></p>
+                <p class="text7" id="tuesday-fahrenheit"></p>
+            </div>
+            <div class="col-1 wednesday">
+                <div class="text1" id="wednesday-day"></div>
+                <div><img src="../Weather/icon-5.svg" class="inline2"/></div>
+                <p class="text6" id="wednesday-temp"></p>
+                <p class="text7" id="wednesday-fahrenheit"></p>
+            </div>
+            <div class="col-1 tuesday">
+                <div class="text1" id="thursday-day"></div>
+                <div><img src="../Weather/icon-7.svg" class="inline2"/></div>
+                <p class="text6" id="thursday-temp"></p>
+                <p class="text7" id="thursday-fahrenheit"></p>
+            </div>
+            <div class="col-1 wednesday">
+                <div class="text1" id="friday-day"></div>
+                <div><img src="../Weather/icon-12.svg" class="inline2"/></div>
+                <p class="text6" id="friday-temp"></p>
+                <p class="text7" id="friday-fahrenheit"></p>
+            </div>
+            <div class="col-1 tuesday">
+                <div class="text1" id="saturday-day"></div>
+                <div><img src="../Weather/icon-13.svg" class="inline2"/></div>
+                <p class="text6" id="saturday-temp"></p>
+                <p class="text7" id="saturday-fahrenheit"></p>
+            </div>
+            <div class="col-1 sunday">
+                <div class="text1" id="sunday-day"></div>
+                <div><img src="../Weather/icon-14.svg" class="inline2"/></div>
+                <p class="text6" id="sunday-temp"></p>
+                <p class="text7" id="sunday-fahrenheit"></p>
+            </div>
+            <div class="col-1">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="background3">
+        <div class="container-fluid">
+            <p class="text8"><a id="camers">Live camers</a></p>
+            <div class="row">
+                <div class="col-1">
+                </div>
+                <div class="col-9">
+                    <div class="images">
+                        <div>
+                        <img src="../Weather/live-camera-1.jpg" class="img1"/>
+                        <p class="text9">New York<br> <span class="text10">8 oct, 8:00AM</span></p>
+                        </div>
+                        <div>
+                        <img src="../Weather/live-camera-2.jpg" class="img1"/>
+                        <p class="text9">Los Angeles<br> <span class="text10">8 oct, 8:00AM</span></p>
+                        </div>
+                        <div>
+                        <img src="../Weather/live-camera-3.jpg" class="img1"/>
+                        <p class="text9">Chicago<br> <span class="text10">8 oct, 8:00AM</span></p>
+                        </div>
+                        <div>
+                        <img src="../Weather/live-camera-4.jpg" class="img1"/>
+                        <p class="text9">London<br> <span class="text10">8 oct, 8:00AM</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="background4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-1">
+                </div>
+                <div class="col-1">
+                    <p class="text11"><a id="news">06.10</a></p>
+                </div>
+                <div class="col-2">
+                    <p class="text12"><strong>Doloremque laudantium totam sequi</strong></p>
+                    <p class="text13">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo saepe assumenda dolorem modi, expedita voluptatum ducimus necessitatibus. Asperiores quod reprehenderit necessitatibus harum, mollitia, odit et consequatur maxime nisi amet doloremque.</p>
+                    <p class="arrow"><img src="../Weather/arrow.JPG" class="inarrow"></p>
+                </div>
+                <div class="col-1">
+                    <p class="text11">06.10</p>
+                </div>
+                <div class="col-2">
+                    <p class="text12"><strong>Doloremque laudantium totam sequi</strong></p>
+                    <p class="text13">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo saepe assumenda dolorem modi, expedita voluptatum ducimus necessitatibus. Asperiores quod reprehenderit necessitatibus harum, mollitia, odit et consequatur maxime nisi amet doloremque.</p>
+                    <p class="arrow"><img src="../Weather/arrow.JPG" class="inarrow"></p>
+                </div>
+                <div class="col-1">
+                    <p class="text11">06.10</p>
+                </div>
+                <div class="col-2">
+                    <p class="text12"><strong>Doloremque laudantium totam sequi</strong></p>
+                    <p class="text13">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo saepe assumenda dolorem modi, expedita voluptatum ducimus necessitatibus. Asperiores quod reprehenderit necessitatibus harum, mollitia, odit et consequatur maxime nisi amet doloremque.</p>
+                    <p class="arrow"><img src="../Weather/arrow.JPG" class="inarrow"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="background5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-1">
+                </div>
+                <div class="col-3">
+                    <p class="text14"><a id="photos">Application features</a></p>
+                    <p class="text15"><img src="../Weather/inarrow2.JPG" class="inarrow"/> <strong>Natus error sit voluptatem accusantium</strong></p>
+                    <p class="text16">Doloremque laudantium totam rem aperiam Inventore<br/> veritatis et quasi architecto beatae vitae.</p>
+                    <p class="text15"><img src="../Weather/inarrow2.JPG" class="inarrow"/> <strong>Natus error sit voluptatem accusantium</strong></p>
+                    <p class="text16">Doloremque laudantium totam rem aperiam Inventore<br/> veritatis et quasi architecto beatae vitae.</p>
+                    <p class="text15"><img src="../Weather/inarrow2.JPG" class="inarrow"/> <strong>Natus error sit voluptatem accusantium</strong></p>
+                    <p class="text16">Doloremque laudantium totam rem aperiam Inventore<br/> veritatis et quasi architecto beatae vitae.</p>
+                </div>
+                <div class="col-3">
+                    <p class="text14">Weather analyssis</p>
+                    <p class="text17"><img src="../Weather/inarrow2.JPG" class="inarrow"/> Accusantium doloremque laudantium rem aperiam</p>
+                    <p class="line"></p>
+                    <p class="text17"><img src="../Weather/inarrow2.JPG" class="inarrow"/> Accusantium doloremque laudantium rem aperiam</p>
+                    <p class="line"></p>
+                    <p class="text17"><img src="../Weather/inarrow2.JPG" class="inarrow"/> Accusantium doloremque laudantium rem aperiam</p>
+                    <p class="line"></p>
+                    <p class="text17"><img src="../Weather/inarrow2.JPG" class="inarrow"/> Accusantium doloremque laudantium rem aperiam</p>
+                    <p class="line"></p>
+                    <p class="text17"><img src="../Weather/inarrow2.JPG" class="inarrow"/> Accusantium doloremque laudantium rem aperiam</p>
+                    <p class="line"></p>
+                    <p class="text17"><img src="../Weather/inarrow2.JPG" class="inarrow"/> Accusantium doloremque laudantium rem aperiam</p>
+                    <p class="line"></p>
+                    <p class="text17"><img src="../Weather/inarrow2.JPG" class="inarrow"/> Accusantium doloremque laudantium rem aperiam</p>
+                    <p class="line"></p>
+                </div>
+                <div class="col-3">
+                    <p class="text14">Awesome Photos</p>
+                    <div class="images1">
+                        <img src="../Weather/images.JPG" class="fullimage"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="background6">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-1">
+                    <p><a id="contact"></a></p>
+                </div>
+                <div class="col-6">
+                    <input type="text" class="box3" id="copy" placeholder="Enter your email to subscribe...">
+                    <button class="bt2" type="submit">Subscribe</button>
+                </div>
+                <div class="col-3">
+                        <img src="../Weather/links.JPG" class="links"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+
+
+function getWeather() {
+            var city = document.getElementById("city").value;
+            var apiKey = 'b1b15e88fa797225412429c1c50c122a1'; // Replace with your OpenWeatherMap API Key
+
+            // Geocode to get latitude and longitude
+            var geocodeUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+
+            $.get(geocodeUrl, function(data) {
+                var lat = data.coord.lat;
+                var lon = data.coord.lon;
+
+                document.getElementById("city-name").textContent = city;
+
+                // Get 7-day forecast
+                var weatherUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,hourly&units=metric&appid=${apiKey}`;
+
+                $.get(weatherUrl, function(forecastData) {
+                    var dailyData = forecastData.daily;
+
+                    // Get day of the week for each forecast
+                    var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+                    // Update the days and temperatures
+                    document.getElementById("monday-day").textContent = weekdays[new Date(dailyData[1].dt * 1000).getDay()];
+                    document.getElementById("monday-temp").textContent = `${dailyData[1].temp.day}°C`;
+                    document.getElementById("monday-fahrenheit").textContent = `${(dailyData[1].temp.day * 9/5 + 32).toFixed(2)}°F`;
+
+                    document.getElementById("tuesday-day").textContent = weekdays[new Date(dailyData[2].dt * 1000).getDay()];
+                    document.getElementById("tuesday-temp").textContent = `${dailyData[2].temp.day}°C`;
+                    document.getElementById("tuesday-fahrenheit").textContent = `${(dailyData[2].temp.day * 9/5 + 32).toFixed(2)}°F`;
+
+                    document.getElementById("wednesday-day").textContent = weekdays[new Date(dailyData[3].dt * 1000).getDay()];
+                    document.getElementById("wednesday-temp").textContent = `${dailyData[3].temp.day}°C`;
+                    document.getElementById("wednesday-fahrenheit").textContent = `${(dailyData[3].temp.day * 9/5 + 32).toFixed(2)}°F`;
+
+                    document.getElementById("thursday-day").textContent = weekdays[new Date(dailyData[4].dt * 1000).getDay()];
+                    document.getElementById("thursday-temp").textContent = `${dailyData[4].temp.day}°C`;
+                    document.getElementById("thursday-fahrenheit").textContent = `${(dailyData[4].temp.day * 9/5 + 32).toFixed(2)}°F`;
+
+                    document.getElementById("friday-day").textContent = weekdays[new Date(dailyData[5].dt * 1000).getDay()];
+                    document.getElementById("friday-temp").textContent = `${dailyData[5].temp.day}°C`;
+                    document.getElementById("friday-fahrenheit").textContent = `${(dailyData[5].temp.day * 9/5 + 32).toFixed(2)}°F`;
+
+                    document.getElementById("saturday-day").textContent = weekdays[new Date(dailyData[6].dt * 1000).getDay()];
+                    document.getElementById("saturday-temp").textContent = `${dailyData[6].temp.day}°C`;
+                    document.getElementById("saturday-fahrenheit").textContent = `${(dailyData[6].temp.day * 9/5 + 32).toFixed(2)}°F`;
+
+                    document.getElementById("sunday-day").textContent = weekdays[new Date(dailyData[0].dt * 1000).getDay()];
+                    document.getElementById("sunday-temp").textContent = `${dailyData[0].temp.day}°C`;
+                    document.getElementById("sunday-fahrenheit").textContent = `${(dailyData[0].temp.day * 9/5 + 32).toFixed(2)}°F`;
+                });
+            });
+
+            let box = document.querySelector(".background2");
+            box.classList.add("showtemperature");
+        }
+
+
+    
+</script>   
+</body>
+</html>

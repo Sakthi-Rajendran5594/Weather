@@ -1,0 +1,347 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar{
+    height: 100px;
+    background-color: #1e202b;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+.navbar-content{
+    list-style: none;
+    display: flex;
+    font-weight: 600;  
+}
+
+.navbar-content li {
+    margin: 0 30px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+
+    font-size: 25px;
+    position: relative;
+    right: 25px;
+
+}
+
+.navbar-content a:hover{
+    border: 2px solid #009ad8;
+    border-radius: 10px;
+    padding: 3px;
+    color: #009ad8;
+}
+
+.background{
+    background-image: url("../Weather/forecaste.jpg");
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#search{
+    width: 1250px;
+    height: 45px;
+    position: relative;
+    top: 150px;
+    left: 135px;
+    border: none;
+    background-color: #1e202b;
+    border-radius: 10px;
+    color: white;
+    
+}
+
+.bt1{
+    width: 125px;
+    height: 30px;
+    border: none;
+    background-color: #009ad8;
+    border-radius: 10px;
+    position: relative;
+    top: 150px;
+
+}
+
+.text1{
+    color: #bdc1c8;
+    position: relative;
+
+}
+
+.text2{
+    position: relative;
+    left: 280px;
+    color: #bdc1c8;
+    
+}
+
+.monday{
+    background-color: #323544;
+    height: 300px;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid;
+}
+
+.text3{
+    position: relative;
+    color: #bdc1c8;
+    font-size: 20px;
+    top: 30px;
+    
+}
+
+.text4{
+    position: relative;
+    color: white;
+    font-size: 70px;
+    top: 30px;
+    
+}
+
+.inline{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    left: 200px;
+    top: 50px;
+}
+
+.text5{
+    position: relative;
+    color: #bdc1c8;
+    font-size: 20px;
+    top: 30px;
+    left: 35px;
+    
+}
+
+.inline1{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right: 20px;
+    
+}
+
+.tuesday{
+    background-color: #262936;
+    height: 300px;
+    text-align: center;
+    border: 1px solid;
+}
+
+.inline2{
+    position: relative;
+    position: relative;
+    top: 50px;
+    width: 60px;
+    height: 60px;  
+}
+
+.text6{
+    position: relative;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    top: 100px;    
+}
+
+.text7{
+    position: relative;
+    color: #bdc1c8;
+    font-size: 15px;
+    text-align: center;
+    top: 85px;    
+}
+
+.wednesday{
+    background-color: #323544;
+    height: 300px;
+    text-align: center;
+    border: 1px solid;
+}
+
+.sunday{
+    background-color: #323544;
+    height: 300px;
+    text-align: center;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid;
+}
+
+.upper{
+    position: relative;
+    top: -125px;
+    
+}
+
+.background2{
+    background-color: #323544;
+    height: 375px;
+    display: none;
+}
+
+.showtemperature{
+    display: block;
+}
+
+.background3{
+    background-color: #323544;
+    height: 400px;
+}
+
+.text8{
+    font-size: 35px;
+    color: white;
+    margin-left: 130px;
+}
+
+.images{
+    display: flex;
+    gap: 10px; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.text9{
+    font-size: 17px;
+    color: white;
+    margin-top: 10px;  
+}
+
+span.text10{
+    font-size: 11px;
+    color: #bfc1c8;
+}
+
+.background4{
+    background-color: #262936;
+    height: 400px;
+}
+
+.text11{
+    font-size: 25px;
+    color: #1388d8;
+    margin-top: 50px;
+}
+
+.text12{
+    font-size: 13px;
+    color: white;
+    margin-top: 45px;
+}
+
+.text13{
+    font-size: 15px;
+    color: #bfbfc3;
+    padding-right: 10px;
+}
+
+.background5{
+    background-color: #1e202b;
+    height: 500px;
+}
+
+.text14{
+    font-size: 30px;
+    color: white;
+    margin-top: 50px;
+}
+
+.text15{
+    font-size: 13px;
+    color: white;
+    margin-top: 47px;
+}
+
+.text16{
+    font-size: 14px;
+    color: #bfbfc3;
+    margin-top: 10px;    
+}
+
+.text17{
+    font-size: 14px;
+    color: white;
+}
+
+.line{
+    width: 350px;
+    height: 1px;
+    background-color: #353741;  
+}
+
+.fullimage{
+    width: 425px;
+    height: 375px;
+}
+
+.background6{
+    background-color: #262936;
+    height: 200px;
+}
+
+.box2{
+    width: 1250px;
+    height: 45px;
+    position: relative;
+    top: 150px;
+    left: 135px;
+    border: none;
+    background-color: #1e202b;
+    border-radius: 10px;
+    color: white;
+    
+}
+
+.box3{
+    width: 750px;
+    height: 45px;
+    position: relative;
+    top: 60px;
+    left: 10px;
+    border: none;
+    background-color: #1e202b;
+    border-radius: 10px;
+    
+}
+
+.bt2{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #009ad8;
+    border-radius: 10px;
+    position: relative;
+    top: 23px;
+    left: 650px;
+}
+
+.links{
+    width: 200px;
+    height: auto;
+    margin-top: 60px;
+    margin-left: 100px;
+}
+
+.copyright{
+    font-size: 13px;
+    color: #bfbfc3;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+
+
+
+
+

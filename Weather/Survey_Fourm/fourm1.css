@@ -1,0 +1,101 @@
+.background{
+    height: 750px;
+    background-color: #ffa500;
+}
+
+.background2{
+    width: 700px;
+    height: 600px;
+    background-color: white;
+    position: relative;
+    top: 50px;
+    left: 450px;
+}
+
+.text1{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    text-align: center;
+    line-height: none;
+}
+
+.text2{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    text-align: center;
+    color: #c2c0bc;
+    line-height: 1px;
+}
+
+.name{
+    font-size: 15px;
+    position: relative;
+    left: 275px;
+    top: 10px;
+}
+
+.box{
+    width: 200px;
+    height: 25px;
+    border: 0.5px solid #ebe9e6;
+    font-size: 15px;
+    position: relative;
+    top: 10px;
+
+}
+
+.name1{
+    font-size: 15px;
+    position: relative;
+    left: 195px;
+    top: 10px;
+}
+
+.name2{
+    font-size: 15px;
+    position: relative;
+    top: 10px; 
+}
+
+.box1{
+    width: 100px;
+    height: 40px;
+    border: 0.5px solid #ebe9e6;
+    font-size: 15px;
+    position: relative;
+    top: 10px;
+}
+
+.text3{
+    border: 0.5px solid #ebe9e6;
+    font-size: 15px;
+    color: #ebe9e6;
+}
+
+.name3{
+    font-size: 15px;
+    position: relative;
+    top: 10px; 
+    left: 125px;
+}
+
+.check{
+    font-size: 15px;
+    color: #81807e;
+    position: relative;
+    left: 5px;
+}
+
+.bt1{
+    width: 150px;
+    height: 30px;
+    border: none;
+    position: relative;
+    left: 300px;
+    color: white;
+    background-color: #347ab6;
+    border-radius: 5px;
+    
+}
